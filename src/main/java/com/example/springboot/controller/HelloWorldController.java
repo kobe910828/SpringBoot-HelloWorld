@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author         xin.huang
  */
 @RestController
+@RequestMapping("/hello/")
 public class HelloWorldController {
 
     /**
@@ -19,8 +20,13 @@ public class HelloWorldController {
      *
      * @return String
      */
-    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    @RequestMapping(value = "hello", method = RequestMethod.GET)
     public String sayHello() {
         return "Hello,World!";
+    }
+
+    @RequestMapping(value = "hi", method = RequestMethod.GET)
+    public String hi() {
+        return "Hi,World!";
     }
 }
