@@ -6,6 +6,7 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 
 /**
  * Spring Boot应用启动类
+ * xxx
  */
 @SpringBootApplication
 @ServletComponentScan
